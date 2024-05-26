@@ -2,7 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Card", menuName = "Card/Catalyst")]
+
+[CreateAssetMenu(fileName = "New Catalyst", menuName = "Card/Catalyst")]
+
 public class Catalyst : Card
 {
     // Start is called before the first frame update
