@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "New Command", menuName = "Card/Command")]
+
 public class Command : Card
 {
     // Start is called before the first frame update
