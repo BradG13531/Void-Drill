@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-[CreateAssetMenu(fileName = "New Card", menuName = "Card/Chipping")]
+[CreateAssetMenu(fileName = "New Chipping", menuName = "Card/Chipping")]
 public class Chipping : Card
 {
     
