@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8d469915adbb14082015b60e80b4a6, type: 3}
   m_Name: Drill
   m_EditorClassIdentifier: 
-  cardID: 0
+  name: Drill
   tier: 2
   artwork: {fileID: 0}
   description: Chip >>3 worth of material from the deposit.

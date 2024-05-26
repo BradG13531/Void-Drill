@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ab22971f1e25ff49931baa7add428c2, type: 3}
   m_Name: Exigent Iteration
   m_EditorClassIdentifier: 
-  cardID: 0
+  name: Exigent Iteration
   tier: 4
   artwork: {fileID: 0}
   description: Instantly draw all remaining cards this cycle. If this card is drawn
