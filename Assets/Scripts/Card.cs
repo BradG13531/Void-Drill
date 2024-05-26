@@ -4,6 +4,10 @@ using UnityEngine;
 
 public class Card : MonoBehaviour
 {
+    public string cardName { get; set; }
+    public int cardID { get; set; }
+
+    public const int tier = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,5 +18,15 @@ public class Card : MonoBehaviour
     void Update()
     {
         
+    }
+    
+    public void SetName(string tempName)
+    {
+        cardName = tempName;
+    }
+
+    public override string ToString()
+    {
+        return name + ", Tier: " + tier;
     }
 }
