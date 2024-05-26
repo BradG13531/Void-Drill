@@ -2,31 +2,18 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Card : MonoBehaviour
+// This gives us the ability to create new Cards from the Unity editor 
+// just by right-clicking, pressing "Create", and choosing "Card"
+[CreateAssetMenu(fileName = "New Card", menuName = "Card/Card")]
+public class Card : ScriptableObject
 {
-    public string cardName { get; set; }
-    public int cardID { get; set; }
+    public new string name { get; set; }
 
-    public const int tier = 0;
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
+    public int cardID; // { get; set; }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
-    }
-    
-    public void SetName(string tempName)
-    {
-        cardName = tempName;
-    }
+    public int tier;
 
-    public override string ToString()
-    {
-        return name + ", Tier: " + tier;
-    }
+    public Sprite artwork;
+
+    public string description;
 }
