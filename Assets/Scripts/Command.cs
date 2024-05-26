@@ -2,13 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class card2 : Card
+[CreateAssetMenu(fileName = "New Card", menuName = "Card/Command")]
+public class Command : Card
 {
     // Start is called before the first frame update
     void Start()
     {
-        cardName = "card2";
-        cardID = 2;
+        
     }
 
     // Update is called once per frame

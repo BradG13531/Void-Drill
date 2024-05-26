@@ -10,17 +10,7 @@ public class CardManager : MonoBehaviour
 
     public Card GetCard(int num)
     {
-        switch (num)
-        {
-            case 0:
-                return card_0;
-            case 1:
-                return card_1;
-            case 2:
-                return card_2;
-            default:
-                return null;
-        }
+        return null;
     }
 
 }
