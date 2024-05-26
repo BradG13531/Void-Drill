@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ef8d469915adbb14082015b60e80b4a6, type: 3}
   m_Name: Overloaded Slicer
   m_EditorClassIdentifier: 
-  cardID: 0
+  name: Overloaded Slicer
   tier: 3
   artwork: {fileID: 0}
   description: Extremely focused energy that chips >>6 worth of material from the

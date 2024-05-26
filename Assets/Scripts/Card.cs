@@ -7,9 +7,10 @@ using UnityEngine;
 [CreateAssetMenu(fileName = "New Card", menuName = "Card/Card")]
 public class Card : ScriptableObject
 {
-    public new string name { get; set; }
+    public new string name;
 
-    public int cardID; // { get; set; }
+    // Not sure if we need this 
+    // public int cardID;
 
     public int tier;
 
