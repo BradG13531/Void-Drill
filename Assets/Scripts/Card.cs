@@ -1,20 +1,15 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
-// This gives us the ability to create new Cards from the Unity editor 
-// just by right-clicking, pressing "Create", and choosing "Card"
-[CreateAssetMenu(fileName = "New Card", menuName = "Card/Card")]
-public class Card : ScriptableObject
+[RequireComponent(typeof(CardUI))] // Attaches a CardUI to every card object
+public class Card : MonoBehaviour
 {
-    public new string name;
+    [field: SerializeField] public ScriptableCard CardData { get; private set; }
 
-    // Not sure if we need this 
-    // public int cardID;
+    // Set card data at runtime
+    public void SetUp(ScriptableCard data)
+    {
+        CardData = data;
+        GetComponent<CardUI>().SetCardUI();
+    }
 
-    public int tier;
-
-    public Sprite artwork;
-
-    public string description;
 }
