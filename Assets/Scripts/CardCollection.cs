@@ -4,6 +4,7 @@ using UnityEngine;
 
 // A general collection of CardData objects. Used in any instance where multiple cards would be needed,
 // a deck, card pack, etc.
+[CreateAssetMenu(menuName = "Card Collection")]
 public class CardCollection : ScriptableObject
 {
     [field: SerializeField] public List<ScriptableCard> CardsInCollection { get; private set; }

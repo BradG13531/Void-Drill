@@ -14,12 +14,12 @@ public class Deck : MonoBehaviour
     [SerializeField] private Card cardPrefab; // This is used to make copies with different CardData   
 
     [SerializeField] private Canvas cardCanvas;
-    
+
     // Represents the instantiated cards
-    private List<Card> _deckPile;
-    private List<Card> _discardPile;
-    
-    public List<Card> Hand { get; private set; }
+    private List<Card> _deckPile = new();
+    private List<Card> _discardPile = new();
+
+    public List<Card> HandCards { get; private set; } = new();
     
     
     
@@ -67,7 +67,7 @@ public class Deck : MonoBehaviour
         }
     }
 
-    public void DrawHand(int amount = 1)
+    public void DrawHand(int amount = 5)
     {
         for (int i = 0; i < amount; i++)
         {
@@ -78,7 +78,7 @@ public class Deck : MonoBehaviour
                 Shuffle();
             }
             
-            Hand.Add(_deckPile[0]);
+            HandCards.Add(_deckPile[0]);
             _deckPile[0].gameObject.SetActive(true);
             _deckPile.RemoveAt(0);
         }
@@ -87,9 +87,9 @@ public class Deck : MonoBehaviour
     // If needed, this exists here
     public void DiscardCard(Card card)
     {
-        if (Hand.Contains(card))
+        if (HandCards.Contains(card))
         {
-            Hand.Remove(card);
+            HandCards.Remove(card);
             _discardPile.Add(card);
             card.gameObject.SetActive(false);
         }
